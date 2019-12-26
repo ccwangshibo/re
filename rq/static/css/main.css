@@ -1,0 +1,44 @@
+.main{
+
+}
+.mb-container{
+  width: 1152px;
+	height: 382px;
+  margin-bottom: 44px;
+  background-color: #93999f;
+  box-shadow: 0 12px 24px 0 rgba(7, 17, 27, 0.2);
+	position: relative;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 8px;
+}
+.menu-content{
+	width: 216px;
+	float: left;
+	position: relative;
+	background: #2b333b;
+	padding-top: 17px;
+	padding-bottom: 15px;
+}
+.menu-item{
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	cursor: pointer;
+	color: #999;
+	padding: 0 30px;
+}
+.menu-item:hover{
+	background: rgba(7,17,27,0.3);
+}
+.menu-item a{
+	color: #fff;
+	line-height: 50px;
+}
+.menu-details{
+	width: 800px;
+	height: 382px;
+	background: #fff;
+	float: left;
+}

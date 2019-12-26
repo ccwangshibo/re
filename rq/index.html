@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>仁清商城</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1256121_7499bs5io59.css">
+	<link rel="stylesheet" href="./static/css/index.css">
+	<link rel="stylesheet" href="./static/css/main.css">
+	<script src="./static/js/index.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="./static/img/logo.png" alt="">
+		</div>
+		<!-- 选项列表 -->
+		<ul class="nav-item">
+			<li><a href="">首页</a></li>
+			<li><a href="">产品</a></li>
+			<li><a href="">区域</a></li>
+			<li><a href="">电商</a></li>
+			<li><a href="">大客户</a><i class="iconfont icon-new"></i></li>
+			<li><a href="">联系我们</a></li>
+		</ul>
+		<!-- 搜索框 -->
+		<div class="search-area">
+			<input type="text" placeholder="请输入搜索内容" class="search-input">
+			<div class="search-icon">
+				<i class="iconfont icon-sousuo"></i>
+			</div>
+		</div>
+		<!-- 右上角登录注册区域 -->
+		<div>
+			<ul class="login-area">
+				<li>
+					<a href="">关注公众号</a>
+					<div class="wechat"></div>
+				</li>
+				<li class="shop-cart">
+					<a href="">
+						<span class="iconfont icon-gouwuche"></span>
+						<span>购物车</span>
+					</a>
+				</li>
+				<li><a href="javascript:void(0);" onclick="login_show()">登录</a>&nbsp;/&nbsp;<a href="javascript:void(0);" onclick="reg_show()">注册</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div class="mb-container">
+			<div class="menu-content">
+				<div class="menu-item" onmouseover="show_menu(0)" onmouseout="hide_menu(0)">
+					<a href="">前端/后端开发</a>
+				</div>
+				<div class="menu-item" onmouseover="show_menu(1)" onmouseout="hide_menu(1)">
+					<a href="">前端/后端开发</a>
+				</div>
+				<div class="menu-item" onmouseover="show_menu(2)" onmouseout="hide_menu(2)">
+					<a href="">前端/后端开发</a>
+				</div>
+				<div class="menu-item" onmouseover="show_menu(3)" onmouseout="hide_menu(3)">
+					<a href="">前端/后端开发</a>
+				</div>
+				<div class="menu-item" onmouseover="show_menu(4)" onmouseout="hide_menu(4)">
+					<a href="">前端/后端开发</a>
+				</div>
+				<div class="menu-item" onmouseover="show_menu(5)" onmouseout="hide_menu(5)">
+					<a href="">前端/后端开发</a>
+				</div>
+				<div class="menu-item" onmouseover="show_menu(6)" onmouseout="hide_menu(6)">
+					<a href="">前端/后端开发</a>
+				</div>
+			</div>
+			<!-- 菜单显示 -->
+			<div class="menu-details" style="display: none;">我是菜单0</div>
+			<div class="menu-details" style="display: none;">我是菜单1</div>
+			<div class="menu-details" style="display: none;">我是菜单2</div>
+			<div class="menu-details" style="display: none;">我是菜单3</div>
+			<div class="menu-details" style="display: none;">我是菜单4</div>
+			<div class="menu-details" style="display: none;">我是菜单5</div>
+			<div class="menu-details" style="display: none;">我是菜单6</div>
+			<div class="banner-content"></div>
+		</div>
+	</div>
+	<!-- 登录面板 -->
+	<div class="login-content" style="display: none;">
+		<div class="login-background"></div>
+		<div class="login-modal">
+			<div class="login-modal-header">
+				<span>登录</span>
+				<i class="iconfont icon-guanbi" onclick="login_show()"></i>
+			</div>
+			<div class="login-modal-body">
+				<form action="" method="get" class="login-form">
+					<div class="login-user">
+						<input type="text" id="user" placeholder="请输入用户名/邮箱">
+					</div>
+					<div class="login-upwd">
+						<input type="password" id="upwd" placeholder="请输入密码">
+					</div>
+					<div class="login-options">
+						<div class="login-rpwd">
+							<input type="checkbox" id="rpwd"><label for="rpwd">七天内自动登录</label>
+						</div>
+						<div>
+							<a href="">忘记密码</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="reg_show()">没有账号</a>
+						</div>
+					</div>
+					<div class="login-button">
+						<button>登录</button>
+					</div>
+				</form>
+			</div>
+			<div class="login-modal-footer">
+				<div class="login-method">
+					<div class="login-method-phone">
+						<a href="">手机短信登录</a>
+					</div>
+					<div class="login-method-other">
+						<i class="iconfont icon-weibo"></i>
+						<i class="iconfont icon-weixin"></i>
+						<i class="iconfont icon-qq"></i>
+					</div>
+				</div>
+				<div class="login-warning">
+					<span>登录即同意仁清商城<a href="">《隐私政策》</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 注册面板 -->
+	<div class="reg-content" style="display: none;">
+		<div class="reg-background"></div>
+		<div class="reg-modal">
+			<div class="reg-modal-header">
+				<span>注册</span>
+				<i class="iconfont icon-guanbi" onclick="reg_show()"></i>
+			</div>
+			<div class="reg-modal-body">
+				<form action="" method="post" class="reg-form">
+					<div class="reg-user">
+						<input type="text" id="user" placeholder="请输入用户名或邮箱">
+						<span class="user-check"></span>
+					</div>
+					<div class="reg-upwd">
+						<input type="password" id="upwd" placeholder="请设置用户密码">
+						<span class="upwd-check"></span>
+					</div>
+					<div class="reg-cpwd">
+						<input type="password" id="cpwd" placeholder="请重复输入密码">
+						<span class="cpwd-check"></span>
+					</div>
+					<div class="reg-button">
+						<button>立即注册</button>
+					</div>
+				</form>
+			</div>
+			<div class="reg-modal-footer"></div>
+		</div>
+	</div>
+</body>
+</html>
