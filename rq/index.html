@@ -3,83 +3,315 @@
 <head>
 	<meta charset="UTF-8">
 	<title>仁清商城</title>
-	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1256121_7499bs5io59.css">
+	<link rel="icon" href="./static/img/icon.png">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1256121_vrrz4wgi69b.css">
 	<link rel="stylesheet" href="./static/css/index.css">
 	<link rel="stylesheet" href="./static/css/main.css">
-	<script src="./static/js/index.js"></script>
+	<link rel="stylesheet" href="./static/css/footer.css">
 </head>
 <body>
 	<div class="header">
-		<div class="logo">
-			<img src="./static/img/logo.png" alt="">
-		</div>
-		<!-- 选项列表 -->
-		<ul class="nav-item">
-			<li><a href="">首页</a></li>
-			<li><a href="">产品</a></li>
-			<li><a href="">区域</a></li>
-			<li><a href="">电商</a></li>
-			<li><a href="">大客户</a><i class="iconfont icon-new"></i></li>
-			<li><a href="">联系我们</a></li>
-		</ul>
-		<!-- 搜索框 -->
-		<div class="search-area">
-			<input type="text" placeholder="请输入搜索内容" class="search-input">
-			<div class="search-icon">
-				<i class="iconfont icon-sousuo"></i>
+		<div class="h-container">
+			<div class="logo">
+				<img src="./static/img/logo.png" alt="">
 			</div>
-		</div>
-		<!-- 右上角登录注册区域 -->
-		<div>
-			<ul class="login-area">
-				<li>
-					<a href="">关注公众号</a>
-					<div class="wechat"></div>
-				</li>
-				<li class="shop-cart">
-					<a href="">
-						<span class="iconfont icon-gouwuche"></span>
-						<span>购物车</span>
-					</a>
-				</li>
-				<li><a href="javascript:void(0);" onclick="login_show()">登录</a>&nbsp;/&nbsp;<a href="javascript:void(0);" onclick="reg_show()">注册</a></li>
+			<!-- 选项列表 -->
+			<ul class="nav-item">
+				<li><a href="">Top单品</a></li>
+				<li><a href="">新品推荐<i class="iconfont icon-new"></i></a></li>
+				<li><a href="">场景导购</a></li>
+				<li><a href="">会员</a></li>
+				<li><a href="">热门搜索</a></li>
 			</ul>
+			<!-- 搜索框 -->
+			<div class="search-area">
+				<input type="text" placeholder="请输入搜索内容" class="search-input">
+				<div class="search-icon">
+					<i class="iconfont icon-sousuo"></i>
+				</div>
+			</div>
+			<!-- 右上角登录注册区域 -->
+			<div>
+				<ul class="login-area">
+					<li>
+						<a href="">关注公众号</a>
+						<div class="wechat">
+							<img src="./static/img/wechat.jpg" alt="">
+						</div>
+					</li>
+					<li class="shop-cart">
+						<a href="">
+							<span class="iconfont icon-gouwuche"></span>
+							<span>购物车</span>
+						</a>
+					</li>
+					<li><a href="javascript:void(0);" onclick="login_show()">登录</a>&nbsp;/&nbsp;<a href="javascript:void(0);"
+							onclick="reg_show()">注册</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="main">
+		<!-- 渐变背景框 -->
+		<div class="bk"></div>
 		<div class="mb-container">
 			<div class="menu-content">
-				<div class="menu-item" onmouseover="show_menu(0)" onmouseout="hide_menu(0)">
-					<a href="">前端/后端开发</a>
+				<div class="menu-item">
+					<a href="">手机配件</a>
 				</div>
-				<div class="menu-item" onmouseover="show_menu(1)" onmouseout="hide_menu(1)">
-					<a href="">前端/后端开发</a>
+				<div class="menu-item">
+					<a href="">车载配件</a>
 				</div>
-				<div class="menu-item" onmouseover="show_menu(2)" onmouseout="hide_menu(2)">
-					<a href="">前端/后端开发</a>
+				<div class="menu-item">
+					<a href="">娱乐影音</a>
 				</div>
-				<div class="menu-item" onmouseover="show_menu(3)" onmouseout="hide_menu(3)">
-					<a href="">前端/后端开发</a>
+				<div class="menu-item">
+					<a href="">电脑配件</a>
 				</div>
-				<div class="menu-item" onmouseover="show_menu(4)" onmouseout="hide_menu(4)">
-					<a href="">前端/后端开发</a>
+				<div class="menu-item">
+					<a href="">乐行出街</a>
 				</div>
-				<div class="menu-item" onmouseover="show_menu(5)" onmouseout="hide_menu(5)">
-					<a href="">前端/后端开发</a>
+				<div class="menu-item">
+					<a href="">畅赢游戏</a>
 				</div>
-				<div class="menu-item" onmouseover="show_menu(6)" onmouseout="hide_menu(6)">
-					<a href="">前端/后端开发</a>
+				<div class="menu-item">
+					<a href="">优享生活</a>
 				</div>
 			</div>
 			<!-- 菜单显示 -->
-			<div class="menu-details" style="display: none;">我是菜单0</div>
-			<div class="menu-details" style="display: none;">我是菜单1</div>
-			<div class="menu-details" style="display: none;">我是菜单2</div>
-			<div class="menu-details" style="display: none;">我是菜单3</div>
-			<div class="menu-details" style="display: none;">我是菜单4</div>
-			<div class="menu-details" style="display: none;">我是菜单5</div>
-			<div class="menu-details" style="display: none;">我是菜单6</div>
-			<div class="banner-content"></div>
+			<div class="menu-details">
+				<div class="md-title">
+					<p>手机配件</p>
+				</div>
+				<ul>
+					<li><a href="">充电类</a></li>
+					<li><a href="">线材类</a></li>
+					<li><a href="">保护壳</a></li>
+					<li><a href="">保护膜</a></li>
+				</ul>
+				<div class="slide"></div>
+			</div>
+			<div class="menu-details">我是菜单1</div>
+			<div class="menu-details">我是菜单2</div>
+			<div class="menu-details">我是菜单3</div>
+			<div class="menu-details">我是菜单4</div>
+			<div class="menu-details">我是菜单5</div>
+			<div class="menu-details">我是菜单6</div>
+			<div class="banner-content">
+				<img src="static/img/banner4.jpg" alt="">
+			</div>
+		</div>
+		<!-- 绝对定位影响, 写个div分割 -->
+		<div class="mybox"></div>
+		<!-- top单品 -->
+		<div class="product-box">
+			<div class="p-title">
+				<i class="iconfont icon-paihang"></i>
+				 <span>Top单品</span>
+				 <a href="#">查看更多</a>
+			</div>
+			<ul class="p-item-box">
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+			</ul>
+		</div>
+		<!-- 新品推荐 -->
+		<div class="product-box">
+			<div class="p-title">
+				<i class="iconfont icon-xinpin"></i>
+				 <span>新品推荐</span>
+				 <a href="#">查看更多</a>
+			</div>
+			<ul class="p-item-box">
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+			</ul>
+		</div>
+		<!-- 畅赢游戏 -->
+		<div class="product-box">
+			<div class="p-title">
+				<i class="iconfont icon-youxi"></i>
+				 <span>畅赢游戏</span>
+				 <a href="#">查看更多</a>
+			</div>
+			<ul class="p-item-box">
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+			</ul>
+		</div>
+		<!-- 创易办公 -->
+		<div class="product-box">
+			<div class="p-title">
+				<i class="iconfont icon-bangong"></i>
+				 <span>创易办公</span>
+				 <a href="#">查看更多</a>
+			</div>
+			<ul class="p-item-box">
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+				<li class="p-item">
+					<a href="#"><img src="static/img/tp1.jpg" alt=""></a>
+					<div class="pname"><a href="#">ROCK苹果快充数据线</a></div>
+					<div class="price">￥12.9</div>
+					<div class="count">已售63403件</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 页面底部 -->
+	<div class="footer">
+		<div class="f-container">
+			<ul class="service">
+				<li>
+					<div class="iconfont icon-you2"></div>
+					<div>
+						<p>品质保障</p>
+						<p>品质护航&nbsp;购物无忧</p>
+					</div>
+				</li>
+			</ul>
+			<ul class="service">
+				<li>
+					<div class="iconfont icon-qitianwuliyoutuihuanhuo"></div>
+					<div>
+						<p>七天无理由退换货</p>
+						<p>为您提供退货保障</p>
+					</div>
+				</li>
+			</ul>
+			<ul class="service">
+				<li>
+					<div class="iconfont icon-tesefuwu"></div>
+					<div>
+						<p>特色服务体验</p>
+						<p>为您呈现不一样的服务</p>
+					</div>
+				</li>
+			</ul>
+			<ul class="service">
+				<li>
+					<div class="iconfont icon-jiufuqianbaoicon09"></div>
+					<div>
+						<p>帮助中心</p>
+						<p>您的购物指南</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="f-other">
+			<ul>
+				<li>关于我们</li>
+				<li>四大区域</li>
+				<li>联系我们</li>
+				<li>商务合作</li>
+			</ul>
+			<div class="f-slide"></div>
 		</div>
 	</div>
 	<!-- 登录面板 -->
@@ -159,4 +391,5 @@
 		</div>
 	</div>
 </body>
+<script src="./static/js/index.js"></script>
 </html>

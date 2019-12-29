@@ -26,11 +26,20 @@ let reg_show=function(){
 	}
 }
 //菜单的显示与隐藏
+let menu_item=document.getElementsByClassName("menu-item");
 let menu_details=document.getElementsByClassName("menu-details");
-//显示
-let show_menu=function(index){
-	menu_details[index].style.display="block";
+for(let i=0; i<menu_item.length;i++){
+	menu_item[i].addEventListener("mouseover",function(){
+		menu_details[i].style.display="block";
+	});
+	menu_item[i].addEventListener("mouseout",function(){
+		menu_details[i].style.display="none";
+	});
+	menu_details[i].addEventListener("mouseover",function(){
+		menu_details[i].style.display="block";
+	})
+	menu_details[i].addEventListener("mouseout",function(){
+		menu_details[i].style.display="none";
+	})
 }
-let hide_menu=function(index){
-	menu_details[index].style.display="none";
-}
+
