@@ -93,6 +93,7 @@ a{
 .login-area li:first-child div{
 	position: absolute;
 	top: 72px;
+	left: -40px;
 	opacity: 0;
 	z-index: 1000;
 	background: #fff;
@@ -100,18 +101,18 @@ a{
 }
 .login-area li:first-child:hover div{
 	/* display: block; */
-		width: 80px;
-		height: 80px;
+		width: 160px;
+		height: 160px;
 		opacity: 1;
 }
 .wechat{
-	width: 80px;
-	height: 80px;
+	width: 160px;
+	height: 160px;
 }
 .wechat img{
-	width: 60px;
-	height: 60px;
-	margin: 10px;
+	width: 120px;
+	height: 120px;
+	margin: 20px;
 }
 .login-area li a{
 	font-size: 16px;
@@ -121,6 +122,12 @@ a{
 	color: #147bbf;
 }
 /*购物车*/
+.shop-cart{
+	position: relative;
+}
+.shop-cart:hover .my-cart{
+	display: block;
+}
 .shop-cart a{
 	display: inline-block;
 	padding: 0 18px;
@@ -129,6 +136,64 @@ a{
 	line-height: 34px;
 	border-radius: 18px;
 }
+.my-cart{
+	width: 400px;
+	height: 400px;
+	background: #fff;
+	padding:0 20px;
+	position: absolute;
+	z-index: 1000;
+	left: -130px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	display: none;
+}
+.cart-title{
+	display: flex;
+	justify-content: space-between;
+	line-height: 70px;
+}
+.cart-title p:first-child{
+	font-size: 16px;
+	font-weight: bold;
+}
+.cart-title p:last-child{
+	font-size: 14px;
+	color: #333;
+}
+.cart-slide{
+	width: 100%;
+	border-bottom: 1px solid #e8e8e8;
+}
+.cart-body{
+	height: 258px;
+	width: 100%;
+	padding: 20px;
+}
+.cart-body div:first-child{
+	width: 100px;
+	font-size: 100px;
+	color: #4D555D;
+	margin: 30px auto;
+}
+.cart-body p{
+	width: 150px;
+	color: #4D555D;
+	font-size: 16px;
+	margin: 0 auto;
+}
+.go-cart button{
+	width: 100px;
+	height: 40px;
+	border-radius: 24px;
+	background: #0f77be;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	float: right;
+	margin-top: 15px;
+}
+
 /*蒙版效果*/
 .login-background, .reg-background{
 	width: 100%;
