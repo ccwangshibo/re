@@ -1,0 +1,69 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+html, body {
+    font: 14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+    color: #1c1f21;
+    height: 100%;
+}
+a{
+  text-decoration: none;
+}
+/* 页面顶部 */
+.header{
+  height: 50px;
+  width: 100%;
+  background: #1c1f21;
+}
+.h-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 左边 */
+.nav-item{
+  float: left;
+  width: 600px;
+}
+.nav-item::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.nav-item li{
+  float: left;
+  line-height: 50px;
+}
+.nav-item li+li{
+  padding-left: 30px;
+}
+.nav-item li a{
+  color:#717A84;
+  font-size: 16px;
+  font-weight: bold;
+}
+.nav-item li a:hover{
+  color:#fff;
+}
+/* 右边登录注册区域 */
+.login-area{
+  float: right;
+  width: 400px;
+  margin-left: 200px;
+}
+.login-area::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.login-area li{
+  float: left;
+  line-height: 50px;
+  color:#fff;
+  font-size: 16px;
+}
+.login-area li+li{
+  padding-left: 30px;
+}
