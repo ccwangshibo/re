@@ -1,0 +1,158 @@
+.main{
+	position: relative;
+	background: #e8e8e8;
+	padding-bottom: 50px;
+}
+.bk{
+	width: 100%;
+	height: 100px;
+	background-image: linear-gradient(to bottom, rgb(35, 106, 173), rgb(255,255,255));
+	filter: 100px;
+	opacity: 0.3;
+}
+.mybox{
+	height: 330px;
+}
+.mb-container{
+  width: 1152px;
+	height: 382px;
+  margin-bottom: 100px;
+  background-color: #93999f;
+  box-shadow: 0 12px 24px 0 rgba(7, 17, 27, 0.2);
+	position: absolute;
+  overflow: hidden;
+	top: 30px;
+	left: 50%;
+	margin-left: -576px;
+  border-radius: 8px;
+}
+.menu-content{
+	width: 216px;
+	float: left;
+	position: relative;
+	background: #2b333b;
+	padding-top: 17px;
+	padding-bottom: 15px;
+}
+.menu-item{
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	cursor: pointer;
+	color: #999;
+	padding: 0 30px;
+}
+.menu-item:hover{
+	background: rgba(7,17,27,0.3);
+}
+.menu-item a{
+	color: #e8e8e8;
+	line-height: 50px;
+}
+.menu-details{
+	width: 800px;
+	height: 382px;
+	background: #fff;
+	float: left;
+	display: none;
+	position: relative;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.menu-details:hover{
+	cursor: pointer;
+}
+/* 菜单详情样式 */
+.md-title{
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	background: #fff;
+	width: 100px;
+	height: 50px;
+	border: 1px solid #e8e8e8;
+	border-radius: 8px;
+}
+.md-title p{
+	color: #2b333b;
+	line-height: 50px;
+	text-align: center;
+}
+.menu-details ul{
+	position: absolute;
+	top: 100px;
+	left: 40px;
+}
+.menu-details ul li{
+	float: left;
+	margin-right: 20px;
+}
+.slide{
+	border-bottom: 2px solid #e8e8e8;
+	width: 100%;
+	position: absolute;
+	top: 190px;
+}
+/* 轮播图 */
+.banner-content{
+	float: left;
+	width: 936px;
+	height: 382px;
+}
+/* top单品 */
+.product-box{
+	width: 1200px;
+	margin: 20px auto;
+}
+.p-title{
+	height: 24px;
+	line-height: 24px;
+	font-size: 20px;
+	color: #0f77be;
+	margin-bottom: 20px;
+}
+.p-title i{
+	font-size: 24px;
+}
+.p-title a{
+	font-size: 16px;
+	text-align: right;
+	float: right;
+}
+.p-item-box{
+	height: 250px;
+}
+.p-item{
+	width: 200px;
+	height: 250px;
+	background: #fff;
+	border-radius: 8px;
+	float: left;
+}
+.p-item+.p-item{
+	margin-left: 50px;
+}
+.p-item img{
+	width: 200px;
+	height: 200px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+/* 产品名称和价格 */
+.pname{
+	text-align: center;
+	color: #333;
+}
+.price{
+	font-size: 12px;
+	color: #4f8dfe;
+	float: left;
+	margin: 5px 10px;
+}
+.count{
+	font-size: 12px;
+	color: #888;
+	float: left;
+	margin: 5px 0px 0px 60px;
+}
