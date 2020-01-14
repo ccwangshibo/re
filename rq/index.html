@@ -342,9 +342,11 @@
 				<form action="" method="get" class="login-form">
 					<div class="login-user">
 						<input type="text" id="user" placeholder="请输入用户名/邮箱">
+						<div id="userChk">用户名必须为8-12字母或数字</div>
 					</div>
 					<div class="login-upwd">
 						<input type="password" id="upwd" placeholder="请输入密码">
+						<div id="upwdChk">密码必须为8-12字母或数字</div>
 					</div>
 					<div class="login-options">
 						<div class="login-rpwd">
@@ -355,7 +357,7 @@
 						</div>
 					</div>
 					<div class="login-button">
-						<button>登录</button>
+						<button id="lg_btn">登录</button>
 					</div>
 				</form>
 			</div>
@@ -387,16 +389,16 @@
 			<div class="reg-modal-body">
 				<form action="" method="post" class="reg-form">
 					<div class="reg-user">
-						<input type="text" id="user" placeholder="请输入用户名或邮箱">
-						<span class="user-check"></span>
+						<input type="text" id="rUser" placeholder="请输入用户名或邮箱">
+						<div id="rUserChk">111</div>
 					</div>
 					<div class="reg-upwd">
-						<input type="password" id="upwd" placeholder="请设置用户密码">
-						<span class="upwd-check"></span>
+						<input type="password" id="rUpwd" placeholder="请设置用户密码">
+						<div id="rUpwdChk"></div>
 					</div>
 					<div class="reg-cpwd">
-						<input type="password" id="cpwd" placeholder="请重复输入密码">
-						<span class="cpwd-check"></span>
+						<input type="password" id="rCpwd" placeholder="请重复输入密码">
+						<div id="rCpwdChk"></div>
 					</div>
 					<div class="reg-button">
 						<button>立即注册</button>

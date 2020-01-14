@@ -199,3 +199,21 @@
 	font-size: 12px;
 	color: #717a84;
 }
+/* 用户名与密码验证提示信息 */
+#userChk, #upwdChk, #rUserChk, #rUpwdChk, #rCpwdChk{
+	font-size: 12px;
+	padding-left: 10px;
+	display: none;
+}
+.vali_fail{
+	color: #f20d0d;
+	display: block !important;
+}
+.vali_success{
+	color: #32d64d;
+	display: block !important;
+}
+.vali{
+	color: #0f77be;
+	display: block !important;
+}
