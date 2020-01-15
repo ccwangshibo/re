@@ -17,7 +17,6 @@
   width: 1152px;
 	height: 382px;
   margin-bottom: 100px;
-  background-color: #93999f;
   box-shadow: 0 12px 24px 0 rgba(7, 17, 27, 0.2);
 	position: absolute;
   overflow: hidden;
@@ -99,60 +98,56 @@
 	float: left;
 	width: 936px;
 	height: 382px;
+	position: relative;
+	overflow: hidden;
 }
-/* top单品 */
-.product-box{
-	width: 1200px;
-	margin: 20px auto;
+#banner_img{
+	width: 4680px;
 }
-.p-title{
-	height: 24px;
-	line-height: 24px;
-	font-size: 20px;
-	color: #0f77be;
-	margin-bottom: 20px;
+#banner_img.transition{
+	transition: all .5s linear;
 }
-.p-title i{
-	font-size: 24px;
+#banner_img li{
+	width: 936px;
+	float: left;
 }
-.p-title a{
-	font-size: 16px;
-	text-align: right;
-	float: right;
+#banner_img img{
+	width: 936px;
 }
-.p-item-box{
-	height: 250px;
+/* 上下翻页 */
+#prevImg, #nextImg{
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	cursor: pointer;
+	opacity: 0;
+	transition: all 1s linear;
 }
-.p-item{
-	width: 200px;
-	height: 250px;
+.banner-content:hover #prevImg, .banner-content:hover #nextImg{
+	opacity: 1;
+}
+#nextImg{
+	right: 0;
+}
+/* 轮播导航 */
+#banner_index{
+	height: 10px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -40px;
+}
+#banner_index li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
 	background: #fff;
-	border-radius: 8px;
-	float: left;
+	cursor: pointer;
 }
-.p-item+.p-item{
-	margin-left: 50px;
+#banner_index li+li{
+	margin-left: 5px;
 }
-.p-item img{
-	width: 200px;
-	height: 200px;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
-}
-/* 产品名称和价格 */
-.pname{
-	text-align: center;
-	color: #333;
-}
-.price{
-	font-size: 12px;
-	color: #4f8dfe;
-	float: left;
-	margin: 5px 10px;
-}
-.count{
-	font-size: 12px;
-	color: #888;
-	float: left;
-	margin: 5px 0px 0px 60px;
+.active{
+	background: #0f77be !important;
 }

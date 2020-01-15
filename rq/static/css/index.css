@@ -94,16 +94,15 @@ a{
 	position: absolute;
 	top: 72px;
 	left: -40px;
-	opacity: 0;
 	z-index: 1000;
 	background: #fff;
-	transition: 1s linear;
+	transition: all 1s linear;
+	width: 160px;
+	height: 160px;
+	display: none;
 }
 .login-area li:first-child:hover div{
-	/* display: block; */
-		width: 160px;
-		height: 160px;
-		opacity: 1;
+	display: block;
 }
 .wechat{
 	width: 160px;
@@ -192,4 +191,64 @@ a{
 	cursor: pointer;
 	float: right;
 	margin-top: 15px;
+}
+/* top单品 */
+.product-box{
+	width: 1200px;
+	margin: 20px auto;
+}
+.p-title{
+	height: 24px;
+	line-height: 24px;
+	font-size: 20px;
+	color: #0f77be;
+	margin-bottom: 20px;
+}
+.p-title i{
+	font-size: 24px;
+}
+.p-title a{
+	font-size: 16px;
+	text-align: right;
+	float: right;
+}
+.p-item-box{
+	height: 250px;
+}
+.p-item{
+	width: 200px;
+	height: 250px;
+	background: #fff;
+	border-radius: 8px;
+	float: left;
+}
+.p-item+.p-item{
+	margin-left: 50px;
+}
+.p-item img{
+	width: 200px;
+	height: 200px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+/* 产品名称和价格 */
+.pname{
+	text-align: center;
+	color: #333;
+}
+.price{
+	font-size: 12px;
+	color: #4f8dfe;
+	float: left;
+	margin: 5px 10px;
+}
+.count{
+	font-size: 12px;
+	color: #888;
+	float: left;
+	margin: 5px 0px 0px 60px;
+}
+/* 悬停动画 */
+.p-item:hover{
+	animation-name: pulse;
 }
